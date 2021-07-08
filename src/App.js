@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <Router>
         <div style={{ padding: 8 }}>
-          <Grid container spacing={16} justify="center">
+          <Grid container spacing={10} justifyContent="center">
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/todo/" component={Todo} />
