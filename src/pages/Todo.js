@@ -58,8 +58,9 @@ class Todo extends Component {
                 title: form.title,
                 completed: false
             };
-            
-            todoActions.create(item);
+            setTimeout(() => {
+                todoActions.create(item);
+            }, 3000);
             this.setState({ form: { title: '' } });
         }
     }
